@@ -1,4 +1,8 @@
-# MuteOverThreshold
+<h1 style="display: flex; align-items: center;">
+  <img src="icon.png" alt="icon" style="width: 100px; height: 100px; margin-right: 10px;">
+  MuteOverThreshold
+</h1>
+Mute Your microphone when PC output audio get's to loud to prevent echo. Prevent echo on discord when using speaker instead of headphones. Good alternative to push to talk.
 
 ## How to setup
 1. Install [SteelSeries GG](https://steelseries.com/gg)
