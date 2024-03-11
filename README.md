@@ -12,11 +12,15 @@ Mute Your microphone when PC output audio get's to loud to prevent echo. Prevent
     - Set CABLE Input (VB-Audio Virtual Cable) as Your STREAM MIX device <br> ![obraz](https://github.com/GrzegorzWalewski/muteOverThreshold/assets/25950627/eca34adc-df1a-42cc-8220-7e58b4a89a19)  
     - MIC -> SHORTCUTS -> Personal -> Mute set to `ALT` + `=` <br> ![obraz](https://github.com/GrzegorzWalewski/muteOverThreshold/assets/25950627/0a99723f-8041-45a8-97e8-6cda6b79eef8)
 
-3. Clone/Download as ZIP this repo
-4. Install requiremenst: `pip install -r requirements.txt`
+4. Get script by exe or python script
+    - Exe file
+        - Dowload latest release and run [https://github.com/GrzegorzWalewski/muteOverThreshold/releases](https://github.com/GrzegorzWalewski/muteOverThreshold/releases)
+    - Python script
+        - Clone/Download as ZIP this repo
+        - Install requiremenst: `pip install -r requirements.txt`
 
 ## How to run
-1. `python app.py` <br> ![obraz](https://github.com/GrzegorzWalewski/muteOverThreshold/assets/25950627/00d152a7-23f6-49a7-a7af-408e8d5ec06c)
+1. `python app.py` / run `muteOverThreshold.exe` <br> ![obraz](https://github.com/GrzegorzWalewski/muteOverThreshold/assets/25950627/00d152a7-23f6-49a7-a7af-408e8d5ec06c)
 2. Select `CABLE Output`* <br> ![obraz](https://github.com/GrzegorzWalewski/muteOverThreshold/assets/25950627/348e99f1-120b-4752-9d52-450bf7032326)
 3. Script should mute your mic when threshold of `0.14` RMS is crossed <br> ![obraz](https://github.com/GrzegorzWalewski/muteOverThreshold/assets/25950627/71b8b54f-592a-4988-8d41-04cfc0f2d800)
 
