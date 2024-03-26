@@ -1,11 +1,22 @@
 import sounddevice as sd
 import numpy as np
 import tkinter as tk
+import os
+import sys
 from tkinter import ttk
 import threading
 from pynput.keyboard import Key, Controller
 
 muted = False
+
+def get_image_path(filename):
+    if getattr(sys, 'frozen', False):
+        # Running in a bundle (e.g. PyInstaller)
+        bundle_dir = sys._MEIPASS
+    else:
+        # Running in a normal Python environment
+        bundle_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(bundle_dir, filename)
 
 def change_mute():
     global muted
@@ -22,12 +33,13 @@ def create_gui():
     window = tk.Tk()
     window.tk.call('tk', 'scaling', 3)
     window.title("MuteOverThreshold")
-    window.iconbitmap('icon.ico')
+    icon_path = get_image_path('icon.ico')
+    window.iconbitmap(icon_path)
     window.geometry("500x800")
     window.configure(bg="#1f1f1f")
     window.resizable(False, False)
 
-    icon_path = "icon_mini.png"  # Replace with the actual path to your icon
+    icon_path = get_image_path("icon_mini.png")
     icon = tk.PhotoImage(file=icon_path)
     icon_label = tk.Label(window, image=icon, bg="#1f1f1f")
     icon_label.pack()
